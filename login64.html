@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>64 Beats-login</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo-login64.css"/>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js" ></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js" ></script>
+	<script type="text/javascript" src="js/Login-cadastro.js">
+	</script>
+</head>
+
+<body id="interface">  
+	<header id="cabecalho">  
+		<img id="logo" src="img/logo1.png" alt="logo"/>  
+	</header>
+	<div id="corpo-full">
+
+		<!-- Entrar	-->
+		<section id="corpo">
+		<form method="post" id="flogin">	
+			<h2>LOGIN</h2> 		
+				<div>  
+					<input type="email" name="tlemail" size="20" placeholder="E-mail do usuário" />
+				</div>
+
+				<div>  
+					<input type="password" name="tlsenha" id="cSenha" size="20" placeholder="Senha" />
+				</div>
+
+				<!-- mensagem de erro -->
+				<div  id="usuarioError" class="error" style="margin-bottom: 10px; display:none;">
+					E-mail ou senha inválido
+				</div>		
+				
+				<input onClick="usuario();" type="button" class="btn_log btn_log2" value="Entrar" >
+				<br/>
+				<a id="linkS">Esqueceu sua senha?</a>
+
+				<div>
+					<p>Não tem uma conta?
+					<a class="btn-insc">Inscreva-se</a></p>
+				</div> 
+			</form>
+
+			<!-- Cadastro -->
+			<form method="post" id="fcadastro" style="padding-bottom:5px;">	
+			<h2>CADASTRE-SE</h2> 		
+				<div>  
+					<input class="limpar" type="text" name="tNome" size="20" placeholder="Nome de usuário" required="required"/>
+				</div>
+				<div>  
+					<input class="limpar" type="text" name="temail" size="20" placeholder="E-mail do usuário" required="required" id="email"/>
+				</div>
+				<div>  
+					<input type="text" name="temail2" size="20" placeholder="Repetir E-mail" required="required"/>
+				</div>
+				<div>  
+					<input type="password" name="tSenha" size="20" placeholder="Senha" required="required" id="senha"/>
+				</div>	
+				<div>  
+					<input type="password" name="tSenha2" size="20" placeholder="Repetir Senha" required="required"/>
+				</div>					
+				<input id="btn_cad" type="submit" class="btn_log btn_log2" value="Cadastrar"/>
+				<input id="btn-cancel" type="button" class="btn_log btn_log2" value="Cancelar">
+				<div>
+					<p>Já tem uma conta? 
+					<a class="btn-login">Entrar</a></p>
+				</div> 
+			</form>
+
+			<!-- modal aviso -->
+			<div class="fundo">
+			  <div class="janela">
+				<div class="conteudo"><h3>Foi enviado um link de confirmação no seu no email, por favor verifique seu email para concluir o cadastro.<a>click para enviar novamente</a></h3></div>
+			  </div>
+			</div>
+
+			<!-- Esqueceu sua senha? -->
+			<form method="post" id="fsenha" style="display:none; padding-bottom: 35px;">	 		
+				<div id="EsqueceuS">
+					<h2>ESQUECEU SUA SENHA?</h2>
+					<input style="margin-top: 14px;" type="email" name="tlemail" size="20" placeholder="Endereço de E-mail" required/>
+					<input id="btn-enviar" type="submit" class="btn_log btn_log2" value="Enviar" style="margin-bottom: 32px;"/><br/>
+					<a class="btn-login">voltar para a tela de login</a>
+				</div>
+			</form>
+		</section>
+	</div>				
+</body>
+</html>

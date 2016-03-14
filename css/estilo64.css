@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Raleway:600);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+
+*{margin: 0; padding: 0;}
+
+a{text-decoration: none;}
+
+body, html{margin: 0; font: 1.1em 'Muli', sans-serif;}
+
+header#cabecalho{width: 100%; min-width: 1130px;}
+
+
+/*Menu Principal*/
+
+nav.menu
+{ 
+	height:60px; 
+	background-color: #222; 
+	color:#fff; 
+	border-top: 1px solid #5468FA;
+	width: 100%; 
+	text-align: center;
+	line-height: 50px;
+	font-size: 0.9em;
+}
+
+h1{ border-bottom: 1px solid #000;}
+
+#logo-d{ background-image: url(../img/fundo2.jpg); padding: 40px; text-align: center;}
+
+img.logo
+{
+	margin-top: 10px; 
+}
+
+.menu > ul
+{
+	margin: 0;
+	list-style-type:none; 
+	display: inline-block;
+}
+
+.nav-item
+{
+	padding:  20px 14px;
+	line-height: 57px;
+	margin: 0;
+}
+
+.nav-item:hover
+{ 
+	color: #49BBE7; 
+	cursor: pointer;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.nav-option{display: none;}
+
+/*Sub menu*/
+
+div.nav-content
+{	
+	position: absolute; 
+	background-color: #222; 
+	color: #fff;
+	overflow: hidden;
+	z-index: 2;
+	border-radius: 4px;
+	max-height: 0;
+} 
+
+div.nav-content a{ color: #fff; text-decoration: none; }
+
+div.nav-content a:hover{ text-decoration: underline; }
+
+div.nav-sub{ padding: 10px 25px 10px; 	border-top: 1px solid #5468FA;}
+
+div.nav-sub ul
+{ 
+	padding: 0px 20px; margin: 0; 
+	list-style-type:none; 
+	display: inline-block;
+}
+
+div.nav-sub li{height: 40px; }
+
+input.nav-option:checked ~ .nav-content
+{
+	 max-height: 400px; 
+	 -webkit-transition: max-height 0.5s ease-in;
+	 -moz-transition: max-height 0.5s ease-in;
+	 transition: max-height 0.5s ease-in;
+}
+
+input.nav-option:checked + label{ color:#49BBE7; }
+
+/*icones*/
+
+#star{position: relative; top: 10px;}
+
+#trof
+{
+	position: relative; 
+	bottom: 20px; font-size: 18px; 
+	left: 5px;
+	border-right: 1px solid #fff;
+	padding-right: 15px;
+}
+
+#f-user{ font-size: 20px;}
+
+#down{margin-left: 15px; font-size: 12px;}
+
+#exit-link{color: #fff; margin-left: 5px;}
+
+/*Busca*/
+
+#filtro
+{
+	border-radius: 2px;
+	width: 275px;
+	height: 32px;
+	margin-left: 50px;
+	background-color: #ECECF5;
+	outline: 0;
+	border: none;
+	padding-left: 8px;
+	line-height: 30px;
+	font-family:'Muli', sans-serif;
+	font-size: 0.9em;
+}
+
+#busca
+{
+	height: 25px;
+	border-radius: 2px;
+	background-color: #ECECF5;
+	border: none;
+	right: 34px;
+	position: relative;
+	outline: 0;
+	cursor: pointer;
+	bottom: 1px;
+	font-size: 15px;
+}
+
+#user
+{	
+	text-align: right;
+	padding: 8px;
+	color: #fff;
+	bottom: 150px;
+	position: relative;
+	bottom: 32px;
+}
+
+/*close options*/
+
+.nav-option:checked ~ .nav-close{ display: block; }
+
+.nav-close
+{ 
+	position: absolute; 
+	top: 290px; 
+	height: 100%;
+	width: 100%; 
+	left: 0;
+	display: none;
+}
+
+.nav-close-option{display: none;}
+ 
+/*Site*/
+
+.field
+{
+	 border-bottom: 1px solid rgba(0, 0, 0, 0.30); 
+	 padding-left: 12px;
+	 border-radius: 2px;
+	 color: rgba(29, 30, 39, 0.93);
+	 margin-top: 5px;
+}
+
+#pag
+{
+ 	width: 62%; 
+ 	margin: 0 auto;
+  	min-width:1000px; 
+  	padding: 20px;
+}
+
+
+.img-music{display: inline-block; margin: 5px; }

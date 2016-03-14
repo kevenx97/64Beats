@@ -1,0 +1,366 @@
+<html>
+	<head>
+		<title>64Beats</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css" media="screen">
+	    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+	    <link rel="stylesheet" type="text/css" href="css/slide.css">
+	    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+	    <script type="text/javascript" src="js/slide.js"></script>
+	    <script type="text/javascript" src="js/home.js"></script>
+	</head>
+
+	<body>
+		<div id="corpo">
+			<header id="cabecalho"><!-- INICIO DO TOPO -->
+				<div id="topo">
+					<div style="margin-top: 8px" class="logo"><a><img src="img/logo1s.png"></a></div>
+					<div class="user">
+						<span>Keven</span><a title="Usuário" class="user-option"><i class="fa fa-home"></i></a>
+					</div>
+					<div class="list-option">
+						<ul>
+							<li><i class="fa fa-star icon-user"></i></span><a href="#">Favoritos</a></li>
+							<li><i class="fa fa-list-ol icon-user"></i></span><a href="#">Top 10</a></li>
+							<li><i class="fa fa-gear icon-user"></i></span><a href="#">Opções</a></li>
+							<li><i class="fa fa-sign-out icon-user"></i></span><a href="#">Sair</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<nav class="menu">
+					<ul class="nav-list">
+						<li>
+							<a style="padding-left: 17px;" href="#">Musicas</a>
+						</li>
+						<li>
+							<a href="#">Artistas</a>
+						</li>
+
+						<li>
+							<a href="#">Albuns</a>
+						</li>
+
+						<li>
+							<a href="#">Favoritos</a>
+						</li>
+
+						<li>
+							<a href="#">Top 10</a>
+						</li>
+
+						<li class="fill-busc">
+							<i class="fa fa-search search-input"></i>
+							<input type="text" id="filtro" placeholder="O que você quer ouvir hoje?">
+						</li>
+					</ul>
+				</nav>
+			</header><!-- FIM DO TOPO -->
+			
+			<div id="pag"><!-- CONTEUDO -->
+				<section id="content">
+					<div id="galeria"><!-- INCIO SLIDE -->
+						<div id="bt-slide" style="display: none;">
+							<a href="#" class="prev">«</a>
+							<a href="#" class="next">»</a>
+						</div>
+
+						<ul style="width: auto; left: 0px;">
+							<li><img src="img/slider/01.jpg"></li>
+							<li><img src="img/slider/02.jpg"></li>
+							<li><img src="img/slider/03.jpg"></li>
+						</ul>
+					</div><!-- FIM SLIDE -->
+					<div class="list-main">
+						<h2>Musicas em destaque</h2>
+						<ul class="tabs">
+							<li><a href="#rock-list" class="current">Rock</a></li>
+							<li><a href="#samba-list">Samba</a></li>
+							<li><a href="#sert-list">Sertanejo</a></li>
+							<li><a href="#eletro-list">Eletrônica</a></li>
+							<li><a href="#hip-hop">Hip-Hop</a></li>
+						</ul>
+						<div id="tab-content">
+							<div class="tab" id="rock-list" style="display: block;">	
+								<ul>
+									<li>
+										<div class="info">
+											<span>1</span>
+											<img src="img/fotos/linkinpark.jpg">
+										</div>
+										<span><a>Papercut</a></span>
+										<span>- Linkin Park</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>2</span>
+											<img src="img/fotos/coldplay.jpg">
+										</div>
+										<span><a>Viva La Vida</a></span>
+										<span>- Coldplay</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>3</span>
+											<img src="img/fotos/Linyrd.jpg">
+										</div>
+										<span><a>Free Bird</a></span>
+										<span>- Lynyrd Skynyrd</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>4</span>
+											<img src="img/fotos/metal.jpg">
+										</div>
+										<span><a>Nothing else matters</a></span>
+										<span>- Metalica</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>5</span>
+											<img src="img/fotos/avenged.jpg">
+										</div>
+										<span><a>So Far Away</a></span>
+										<span>- Avenged Sevenfold</span>
+									</li>
+								</ul>
+							</div>
+							<div class="tab" id="samba-list" style="display: none;">	
+								<ul>
+									<li>
+										<div class="info">
+											<span>1</span>
+											<img src="img/fotos/ju.jpg">
+										</div>
+										<span><a>Batucada</a></span>
+										<span>Ju Moraes</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>2</span>
+											<img src="img/fotos/seu-jorge.jpg">
+										</div>
+										<span><a>Burguesinha</a></span>
+										<span>Seu Jorge</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>3</span>
+											<img src="img/fotos/zeca-pagodinho.jpg">
+										</div>
+										<span><a>Verdade</a></span>
+										<span>Zeca Pagodinho</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>4</span>
+											<img src="img/fotos/pericles.jpg">
+										</div>
+										<span><a>Êta Amor(part. Xande de Pilares)</a></span>
+										<span>Pêricles</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>5</span>
+											<img src="img/fotos/thiaguinho.jpg">
+										</div>
+										<span><a>Não Tem Hora e Nem Lugar</a></span>
+										<span>Thiaguinho</span>
+									</li>
+								</ul>
+							</div>
+							<div class="tab" id="sert-list" style="display: none;">
+								<ul>
+									<li>
+										<div class="info">
+											<span>1</span>
+										</div>
+										<span><a>Cê que sabe</a></span>
+										<span>Cristiano Araújo</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>2</span>
+										</div>
+										<span><a>Os anjos cantam</a></span>
+										<span>Jorge &amp; Mateus</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>3</span>
+										</div>
+										<span><a>Mudando de assunto</a></span>
+										<span>Henrique e Juliano</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>4</span>
+										</div>
+										<span><a>Suíte 14</a></span>
+										<span>Henrique &amp; Diego (part. MC Guimê)</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>5</span>
+										</div>
+										<span><a>Previsão do tempo</a></span>
+										<span>Fernando e Sorocaba</span>
+									</li>
+								</ul>
+							</div>
+							<div class="tab" id="eletro-list" style="display: none;">	
+								<ul>
+									<li>
+										<div class="info">
+											<span>1</span>
+										</div>
+										<span><a>Blame</a></span>
+										<span>Calvin Harris (part. John Newman)</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>2</span>
+										</div>
+										<span><a>Summer</a></span>
+										<span>Calvin Harris</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>3</span>
+										</div>
+										<span><a>Heroes (We could be)</a></span>
+										<span>Alesso (ft Tove Love)</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>4</span>
+										</div>
+										<span><a>The nights</a></span>
+										<span>Avicii</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>5</span>
+										</div>
+										<span><a>Dangerous</a></span>
+										<span>David Guetta (part. Sam Martin)</span>
+									</li>
+								</ul>
+							</div>
+							<div class="tab" id="hip-hop" style="display: none;">	
+								<ul>
+									<li>
+										<div class="info">
+											<span>1</span>
+										</div>
+										<span><a>See You Again</a></span>
+										<span>Wiz Khalifa Featuring Charlie Puth</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>2</span>
+										</div>
+										<span><a>Watch Me</a></span>
+										<span>Silento</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>3</span>
+										</div>
+										<span><a>Trap Queen</a></span>
+										<span>Fetty Wap</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>4</span>
+										</div>
+										<span><a>Can't Feel My Face</a></span>
+										<span>The Weeknd</span>
+									</li>
+									<li>
+										<div class="info">
+											<span>5</span>
+										</div>
+										<span><a>Flex (Ooh Ooh Ooh)</a></span>
+										<span>Rich Homie Quan</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="noticias">
+						<h2>Notícias</h2>
+						<ul style="margin-top: 43px;">
+							<li>
+								<div class="f-not"><img src="img/fotos/justin.jpg"></div>
+								<span>Justiça argentina revoga ordem de prisão contra Justin Bieber</span>
+							</li>
+							<li>
+								<div class="f-not"><img src="img/fotos/Taylor.jpg"></div>
+								<span>Proibido de sair das Filipinas, Chris Brown desabafa na web.</span>
+							</li>
+							<li>
+								<div class="f-not"><img src="img/fotos/chris-brown.jpg"></div>
+								<span>Proibido de sair das Filipinas, Chris Brown desabafa na web.</span>
+							</li>
+							<li>
+								<div class="f-not"><img src="img/fotos/cristiano.jpg"></div>
+								<span>Polícia indicia motorista de Cristiano Araújo por duplo homicídio culposo.</span>
+							</li>
+							<li>
+								<div class="f-not"><img src="img/fotos/latino.jpg"></div>
+								<span>Latino faz acordo para evitar prisão, diz advogado.</span>
+							</li>
+							<li>
+								<div class="f-not"><img src="img/fotos/jay-z.jpg"></div>
+								<span>Jay Z rebate críticas contra Tidal, seu serviço de música digital.</span>
+							</li>
+						</ul>
+					</div>	
+				</section>
+
+				<aside class="side-bar">
+					<div id="player"><!-- div-player -->
+						<div id="audio-player"><!-- div-audio-player -->
+							<div id="audio-info">
+								<span class="artist">Linkin Park</span> - <span class="title">Papercut.mp3</span>
+							</div>
+							 <div class="clearfix"></div>
+							 <div id="tracker">
+								<div id="progressBar">
+									<span id="progress"></span>
+								</div>
+								<span id="duration">0.00</span>
+							 </div>
+
+							 <div id="buttons">
+							 	<span>
+								<button id="prev"></button>
+								<button id="play"></button>
+								<button id="pause" style="display: none;"></button>
+								<button id="next"></button>
+								<div id="vol">
+									<img id="icon-volume" src="img/opcoes/Volume1.png" alt="volume">
+								 	<input id="volume" type="range" min="0" max="10" value="5">
+							 	</div>
+								</span>
+
+							 </div>
+
+							 <div class="clearfix"></div>
+							 <ul id="playlist" class="hidden">
+								<li song="Linkin Park - Papercut.mp3" artist="Linkin Park" class="active">Papercut.mp3</li>
+								<li song="Linkin Park - One Step Closer.mp3" artist="Linkin Park">One Step Closer.mp3</li>
+								<li song="Linkin Park - With You.mp3" artist="Linkin Park">With You.mp3</li>
+							</ul>
+						</div><!-- div-audio-player -->
+					</div><!-- div-player -->
+				</aside>
+			</div>
+		</div>
+		<!-- <script src="js/jquery.js"></script> -->
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/tabs.js"></script>
+	</body>
+</html>

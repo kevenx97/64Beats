@@ -1,0 +1,65 @@
+div#galeria
+{
+	background: #fff;
+	width: 730px;
+	height: 314px;
+	display: block;
+	overflow: hidden;
+	box-shadow: #999 0 0 15px;
+	margin-bottom: 45px;
+}
+
+div#bt-slide
+{
+	display: none;
+	position: absolute;
+	margin: 5px;
+	z-index: 500;
+}
+
+div#bt-slide a
+{
+	background: #333;
+	width: 50px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 37px;
+	font-size: 28px;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+div#bt-slide a:hover
+{
+	background: #555;
+}
+
+div#galeria ul
+{
+	list-style: none;
+	display: table;
+	position: relative;
+}
+
+div#galeria ul li
+{
+	width: 730px;
+	height: 314px;
+	display: inline-block;
+	position: relative;
+}
+
+div#galeria ul li span
+{
+	background: #333;
+	width: 580px;
+	display: table;
+	padding: 10px;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0;
+	margin: 5px;
+	color: #fff;
+}
